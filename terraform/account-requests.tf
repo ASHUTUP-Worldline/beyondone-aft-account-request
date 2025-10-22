@@ -4,7 +4,8 @@ module "account_request_01" {
   control_tower_parameters = {
     AccountEmail              = "ASHUTUP+BeyondOne-Network@amazon.com" #"{{ACCOUNT EMAIL}}"
     AccountName               = "Network" #"{{ACCOUNT NAME}}"
-    ManagedOrganizationalUnit = "Infrastructure" #"{{OU NAME}}" 
+    # ManagedOrganizationalUnit = "Infrastructure" #"{{OU NAME}}" 
+    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)" #"{{OU NAME}}" 
     SSOUserEmail              = "ASHUTUP+BeyondOne-Network@amazon.com" #"{{ACCOUNT SSO EMAIL}}"
     SSOUserFirstName          = "Network Account" #"{{ACCOUNT SSO FIRST NAME}}"
     SSOUserLastName           = "Admin" #"{{ACCOUNT SSO LAST NAME}}"
