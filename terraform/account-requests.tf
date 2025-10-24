@@ -53,7 +53,7 @@ module "account_request_02" {
     "ABC:Environment" = "Production" #"Dev"
     "ABC:CostCenter"  = "123456"
     "ABC:Vended"      = "true"
-    "ABC:DivCode"     = "102"
+    "ABC:DivCode"     = "103"
     "ABC:BUCode"      = "ABC003"
     "ABC:Project"     = "123456"
   }
