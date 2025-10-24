@@ -41,7 +41,7 @@ module "account_request_02" {
   control_tower_parameters = {
     AccountEmail              = "ASHUTUP+BeyondOne-ThirdPartyTools@amazon.com" #"{{ACCOUNT EMAIL}}"
     AccountName               = "ThirdPartyTools" #"{{ACCOUNT NAME}}"
-    ManagedOrganizationalUnit = "(ou-vtow-8u5d5y5o)" #"{{OU NAME}}" 
+    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)" #"{{OU NAME}}" 
     SSOUserEmail              = "ASHUTUP+BeyondOne-ThirdPartyTools@amazon.com" #"{{ACCOUNT SSO EMAIL}}"
     SSOUserFirstName          = "ThirdPartyTools Account" #"{{ACCOUNT SSO FIRST NAME}}"
     SSOUserLastName           = "Admin" #"{{ACCOUNT SSO LAST NAME}}"
