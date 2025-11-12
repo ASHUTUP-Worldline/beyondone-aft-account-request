@@ -3,23 +3,18 @@ module "account_request_01" {
 
   control_tower_parameters = {
     AccountEmail              = "ASHUTUP+BeyondOne-Network@amazon.com" #"{{ACCOUNT EMAIL}}"
-    AccountName               = "Network" #"{{ACCOUNT NAME}}"
-    # ManagedOrganizationalUnit = "Infrastructure" #"{{OU NAME}}" 
-    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)" #"{{OU NAME}}" 
+    AccountName               = "Network"                              #"{{ACCOUNT NAME}}"
+    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)"                   #"{{OU NAME}}" 
     SSOUserEmail              = "ASHUTUP+BeyondOne-Network@amazon.com" #"{{ACCOUNT SSO EMAIL}}"
-    SSOUserFirstName          = "Network Account" #"{{ACCOUNT SSO FIRST NAME}}"
-    SSOUserLastName           = "Admin" #"{{ACCOUNT SSO LAST NAME}}"
+    SSOUserFirstName          = "Network Account"                      #"{{ACCOUNT SSO FIRST NAME}}"
+    SSOUserLastName           = "Admin"                                #"{{ACCOUNT SSO LAST NAME}}"
   }
 
   account_tags = {
-    "ABC:Owner"       = "ashutup@amazon.com" #"myname@mycompany.com"
-    "ABC:Division"    = "ENT"
-    "ABC:Environment" = "Production" #"Dev"
-    "ABC:CostCenter"  = "123456"
-    "ABC:Vended"      = "true"
-    "ABC:DivCode"     = "102"
-    "ABC:BUCode"      = "ABC003"
-    "ABC:Project"     = "123456"
+    "organization_unit" = "Infrastructure"
+    "account_owner"     = "Network Management"
+    "budget_owner"      = "Network Management / Infrastructure"
+    "account_type"      = "network-hub"
   }
 
   change_management_parameters = {
@@ -40,22 +35,18 @@ module "account_request_02" {
 
   control_tower_parameters = {
     AccountEmail              = "ASHUTUP+BeyondOne-ThirdPartyTools@amazon.com" #"{{ACCOUNT EMAIL}}"
-    AccountName               = "ThirdPartyTools" #"{{ACCOUNT NAME}}"
-    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)" #"{{OU NAME}}" 
+    AccountName               = "ThirdPartyTools"                              #"{{ACCOUNT NAME}}"
+    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)"                           #"{{OU NAME}}" 
     SSOUserEmail              = "ASHUTUP+BeyondOne-ThirdPartyTools@amazon.com" #"{{ACCOUNT SSO EMAIL}}"
-    SSOUserFirstName          = "ThirdPartyTools Account" #"{{ACCOUNT SSO FIRST NAME}}"
-    SSOUserLastName           = "Admin" #"{{ACCOUNT SSO LAST NAME}}"
+    SSOUserFirstName          = "ThirdPartyTools Account"                      #"{{ACCOUNT SSO FIRST NAME}}"
+    SSOUserLastName           = "Admin"                                        #"{{ACCOUNT SSO LAST NAME}}"
   }
 
   account_tags = {
-    "ABC:Owner"       = "ashutup@amazon.com" #"myname@mycompany.com"
-    "ABC:Division"    = "ENT"
-    "ABC:Environment" = "Production" #"Dev"
-    "ABC:CostCenter"  = "123456"
-    "ABC:Vended"      = "true"
-    "ABC:DivCode"     = "105"
-    "ABC:BUCode"      = "ABC003"
-    "ABC:Project"     = "123456"
+    "organization_unit" = "Security"
+    "account_owner"     = "Security Management"
+    "budget_owner"      = "Security Management / CISO"
+    "account_type"      = "security"
   }
 
   change_management_parameters = {
@@ -76,23 +67,18 @@ module "account_request_03" {
 
   control_tower_parameters = {
     AccountEmail              = "ASHUTUP+BeyondOne-SharedSvc@amazon.com" #"{{ACCOUNT EMAIL}}"
-    AccountName               = "SharedSvc" #"{{ACCOUNT NAME}}"
-    # ManagedOrganizationalUnit = "Infrastructure" #"{{OU NAME}}" 
-    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)" #"{{OU NAME}}" 
+    AccountName               = "SharedSvc"                              #"{{ACCOUNT NAME}}"
+    ManagedOrganizationalUnit = "(ou-vtow-6z30v9o8)"                     #"{{OU NAME}}" 
     SSOUserEmail              = "ASHUTUP+BeyondOne-SharedSvc@amazon.com" #"{{ACCOUNT SSO EMAIL}}"
-    SSOUserFirstName          = "SharedSvc Account" #"{{ACCOUNT SSO FIRST NAME}}"
-    SSOUserLastName           = "Admin" #"{{ACCOUNT SSO LAST NAME}}"
+    SSOUserFirstName          = "SharedSvc Account"                      #"{{ACCOUNT SSO FIRST NAME}}"
+    SSOUserLastName           = "Admin"                                  #"{{ACCOUNT SSO LAST NAME}}"
   }
 
   account_tags = {
-    "ABC:Owner"       = "ashutup@amazon.com" #"myname@mycompany.com"
-    "ABC:Division"    = "ENT"
-    "ABC:Environment" = "Production" #"Dev"
-    "ABC:CostCenter"  = "123456"
-    "ABC:Vended"      = "true"
-    "ABC:DivCode"     = "102"
-    "ABC:BUCode"      = "ABC003"
-    "ABC:Project"     = "123456"
+    "organization_unit" = "Infrastructure"
+    "account_owner"     = "Network Management"
+    "budget_owner"      = "Network Management / Infrastructure"
+    "account_type"      = "shared-services"
   }
 
   change_management_parameters = {
